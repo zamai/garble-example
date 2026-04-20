@@ -13,6 +13,12 @@ test-garble-internal:
 	go tool garble -literals -seed=dGVzdHNlZWQ= \
 	  test ./greeter_internal/
 
+.PHONY: test-garble-external
+test-garble-external:
+	GOGARBLE="$(GOGARBLE)" \
+	go tool garble -literals -seed=dGVzdHNlZWQ= \
+	  test ./greeter/
+
 # Fails with:
 #   list github.com/example/garble-repro/mocks/greeter: not found
 #
