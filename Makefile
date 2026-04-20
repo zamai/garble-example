@@ -1,4 +1,4 @@
-hGOGARBLE := github.com/example/garble-repro/greeter,github.com/example/garble-repro/greeter_internal
+GOGARBLE := github.com/example/garble-repro/greeter,github.com/example/garble-repro/greeter_internal,github.com/example/garble-repro/mocks/greeter
 
 # Run all tests without garble — all pass.
 .PHONY: test
